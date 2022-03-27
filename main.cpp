@@ -7,10 +7,11 @@ int main() {
 	Money m(5,10);
 	std::cout << m << std::endl;
 
-	Money n(7,77);
+	Money n(10,25);
 	std::cout << m + n << std::endl;
 	std::cout << m - n << std::endl;
 	*/
+	
 
 	return 0;
 }

@@ -2,6 +2,7 @@
 #define HEADER_H
 
 #include <iostream>
+#include <vector>
 
 class Money {
 private:
@@ -10,29 +11,29 @@ public:
 	explicit Money();
 	explicit Money(int inputDollar, int inputCents);
 	
-	bool operator> (const Money& other) {
+	bool operator > (const Money& other) {
 		return totalCents > other.totalCents;
 	}
-	bool operator< (const Money& other) {
+	bool operator < (const Money& other) {
 		return totalCents < other.totalCents;
 	}
-	bool operator>= (const Money& other) {
+	bool operator >= (const Money& other) {
 		return totalCents >= other.totalCents;
 	}
-	bool operator<= (const Money& other) {
+	bool operator <= (const Money& other) {
 		return totalCents <= other.totalCents;
 	}
-	bool operator!= (const Money& other) {
+	bool operator != (const Money& other) {
 		return totalCents != other.totalCents;
 	}
-	bool operator== (const Money& other) {
+	bool operator == (const Money& other) {
 		return totalCents == other.totalCents;
 	}
 
-	int operator+ (const Money& other) {
+	int operator + (const Money& other) {
 		return totalCents + other.totalCents;
 	}
-	int operator- (const Money& other) {
+	int operator - (const Money& other) {
 		return totalCents - other.totalCents;
 	}
 
@@ -42,6 +43,13 @@ public:
 		out << "$" << (m.totalCents - m.totalCents%100) / 100 << "." << m.totalCents%100;
 		return out;
 	}
+
+};
+
+class Account {
+private:
+
+public:
 
 };
 
