@@ -8,4 +8,14 @@ Money::Money(int in_dollar, int in_cent) {
 	totalCents = (in_dollar * 100) + in_cent;
 }
 
+Account::Account(Money m) {
+	deposit.push_back(m);
+}
 
+void Account::makeDeposit(Money m) {
+	deposit.push_back(m);
+}
+
+void Account::makeWithdrawal(Money m) {
+	withdraw.push_back(m);
+}
