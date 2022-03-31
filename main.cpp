@@ -16,11 +16,8 @@ int main() {
 	a.makeDeposit(dep3);
 	a.makeWithdrawal(withd1);
 	a.makeWithdrawal(withd2);
-	
-	//TODO actually show the current balance instead of just showing the initial bal
-	//TODO Write code to verify that your relational operators are working correctly, make outputs into the console
 
-	std::cout << a << std::endl;
+	std::cout << a <<std::endl;
 
 	return 0;
 }
